@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpd2ybtiqgl1g"]
+
+[ext_resource type="Texture2D" uid="uid://0fuhs6mwbemj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-1.png" id="1_aach0"]
+[ext_resource type="Texture2D" uid="uid://d3y1jhny7yaru" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-2.png" id="2_htpyf"]
+[ext_resource type="Texture2D" uid="uid://bp1p7drqalqgj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-3.png" id="3_1vwcu"]
+[ext_resource type="Texture2D" uid="uid://btdk58xhf6kfv" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-4.png" id="4_ev80p"]
+[ext_resource type="Texture2D" uid="uid://b4d04adawwira" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-5.png" id="5_6ii2u"]
+
+[node name="Background" type="Node"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -480.0
+offset_top = -192.0
+offset_right = 688.0
+offset_bottom = 456.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(104, 136)
+scale = Vector2(3.04167, 3.01852)
+texture = ExtResource("1_aach0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(104, 136)
+scale = Vector2(3.04167, 3.01852)
+texture = ExtResource("2_htpyf")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(104, 128)
+scale = Vector2(3.04167, 3.01852)
+texture = ExtResource("3_1vwcu")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(104, 136)
+scale = Vector2(3.04167, 3.05556)
+texture = ExtResource("4_ev80p")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(104, 131)
+scale = Vector2(3.04167, 3.08333)
+texture = ExtResource("5_6ii2u")
