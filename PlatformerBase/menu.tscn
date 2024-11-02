@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=3 uid="uid://crobfphv8gpou"]
+
+[ext_resource type="Texture2D" uid="uid://0fuhs6mwbemj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-1.png" id="1_si5yd"]
+[ext_resource type="Script" path="res://button.gd" id="2_fhuw5"]
+[ext_resource type="Texture2D" uid="uid://d3y1jhny7yaru" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-2.png" id="2_nadca"]
+[ext_resource type="Texture2D" uid="uid://bp1p7drqalqgj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-3.png" id="3_op02d"]
+[ext_resource type="Texture2D" uid="uid://btdk58xhf6kfv" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-4.png" id="4_2v5ug"]
+[ext_resource type="Texture2D" uid="uid://b4d04adawwira" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-5.png" id="5_wq8ae"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4g512"]
+font_size = 50
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 296.0
+offset_right = 1048.0
+offset_bottom = 416.0
+color = Color(0.0980985, 0.0980985, 0.0980985, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 480)
+scale = Vector2(3.8125, 4.44444)
+texture = ExtResource("1_si5yd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 288.0
+offset_right = 950.0
+offset_bottom = 424.0
+theme_override_font_sizes/font_size = 50
+text = "The King's Return"
+label_settings = SubResource("LabelSettings_4g512")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 584.0
+offset_top = 488.0
+offset_right = 884.0
+offset_bottom = 638.0
+text = "PLAY"
+script = ExtResource("2_fhuw5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(736, 464)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 476)
+scale = Vector2(3.8125, 4.40741)
+texture = ExtResource("2_nadca")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 480)
+scale = Vector2(3.8125, 4.44444)
+texture = ExtResource("3_op02d")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 482)
+scale = Vector2(3.8125, 4.42593)
+texture = ExtResource("4_2v5ug")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 478)
+scale = Vector2(3.8125, 4.46296)
+texture = ExtResource("5_wq8ae")

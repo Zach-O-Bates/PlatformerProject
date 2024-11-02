@@ -1,0 +1,112 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqkld8erkd71q"]
+
+[ext_resource type="Texture2D" uid="uid://0fuhs6mwbemj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-1.png" id="1_esooj"]
+[ext_resource type="Script" path="res://ButtonToMenu.gd" id="2_0c3tj"]
+[ext_resource type="Script" path="res://ButtonToPlayAgain.gd" id="3_o1mmu"]
+[ext_resource type="Texture2D" uid="uid://d3y1jhny7yaru" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-2.png" id="4_864n0"]
+[ext_resource type="Texture2D" uid="uid://bp1p7drqalqgj" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-3.png" id="5_3clf0"]
+[ext_resource type="Texture2D" uid="uid://btdk58xhf6kfv" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-4.png" id="6_ob3gl"]
+[ext_resource type="Texture2D" uid="uid://b4d04adawwira" path="res://prototyping_assets/item/Jungle Asset Pack/parallax background/plx-5.png" id="7_y2ai3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 476)
+scale = Vector2(3.8125, 4.40741)
+texture = ExtResource("1_esooj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 296.0
+offset_right = 972.0
+offset_bottom = 416.0
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.988957, 0.988957, 0.988957, 1)
+theme_override_font_sizes/font_size = 50
+text = "THE KING HAS DIED!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 512.0
+offset_right = 678.0
+offset_bottom = 662.0
+text = "Menu"
+script = ExtResource("2_0c3tj")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 512.0
+offset_right = 934.0
+offset_bottom = 662.0
+text = "Try Again?"
+script = ExtResource("3_o1mmu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(736, 464)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 476)
+scale = Vector2(3.8125, 4.40741)
+texture = ExtResource("4_864n0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 480)
+scale = Vector2(3.8125, 4.44444)
+texture = ExtResource("5_3clf0")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 482)
+scale = Vector2(3.8125, 4.42593)
+texture = ExtResource("6_ob3gl")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(732, 478)
+scale = Vector2(3.8125, 4.46296)
+texture = ExtResource("7_y2ai3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 0
+offset_left = 416.0
+offset_top = 296.0
+offset_right = 1048.0
+offset_bottom = 416.0
+color = Color(0.0980985, 0.0980985, 0.0980985, 1)
+
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 1128.0
+offset_top = 462.0
+offset_right = 1230.0
+offset_bottom = 525.0
+text = "Level 1"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1125.0
+offset_top = 394.0
+offset_right = 1250.0
+offset_bottom = 469.0
+text = "Switch the 
+button to
+return to level 1"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
+[connection signal="pressed" from="CheckButton" to="Button2" method="_on_check_button_pressed"]
